@@ -1,6 +1,8 @@
 package com.shoppers.pageObjects;
 
 import com.shoppers.config.TimeoutConfig;
+import com.shoppers.constants.Constants;
+import com.shoppers.helpers.TestConfigLoader;
 import net.serenitybdd.annotations.Step;
 import net.serenitybdd.core.pages.PageObject;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -46,5 +48,29 @@ public class ProductCatalogPage extends PageObject {
         if (!hasFilter) {
             throw new AssertionError("Expected search filter in URL but got: " + url);
         }
+    }
+
+    @Step("Open default product catalog")
+    public void openDefaultProductCatalog() {
+        String baseUrl = TestConfigLoader.get("base.url");
+        String query = TestConfigLoader.get("products.default.query", Constants.DEFAULT_CATALOG_QUERY);
+        String root = baseUrl.endsWith("/") ? baseUrl.substring(0, baseUrl.length() - 1) : baseUrl;
+        openUrl(root + "/products?q=" + query);
+        $("//a[contains(@href,'/products/details')]")
+                .withTimeoutOf(Duration.ofSeconds(TimeoutConfig.HOME_PAGE_LOAD_SECONDS))
+                .waitUntilVisible();
+    }
+
+    @Step("Open first product from catalog listing")
+    public void openFirstProductFromCatalog() {
+        $("//a[contains(@href,'/products/details') and .//img[@title]][1]").waitUntilClickable().click();
+        waitABit(1000);
+    }
+
+    @Step("Wait for product grid to load")
+    public void waitForProductGridLoaded() {
+        $("//a[contains(@href,'/products/details')]")
+                .withTimeoutOf(Duration.ofSeconds(TimeoutConfig.EXPLICIT_WAIT_SECONDS))
+                .waitUntilVisible();
     }
 }

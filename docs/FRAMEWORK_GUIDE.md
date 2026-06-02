@@ -248,16 +248,13 @@ This maps the [Shoppers application functional modules](../../dummy-ecommerce-mi
 | **Login / Sign In** | `/signin` | ✅ **Automated** | `features/Login/` | Done |
 | **Home & Discovery** | `/` | ✅ **Automated** | `features/Home/` | Done |
 | **Search & Suggestions** | Navbar search | ✅ **Automated** | `features/Search/` | Done |
-| **Sign Up** | `/signup` | ⬜ Not started | `features/Signup/` | High |
-| **Home & Discovery** | `/` | ⬜ Not started | `features/Home/` | High |
-| **Navigation & Tabs** | Navbar | ⬜ Not started | `features/Navigation/` | Medium |
-| **Search & Suggestions** | Navbar search | ⬜ Not started | `features/Search/` | High |
-| **Product Catalog & Filters** | `/products?q=...` | ⬜ Not started | `features/ProductCatalog/` | High |
-| **Product Details** | `/products/details?q=...` | ⬜ Not started | `features/ProductDetails/` | High |
-| **Shopping Bag** | `/shopping-bag` | ⬜ Not started | `features/ShoppingBag/` | High |
-| **Checkout & Shipping** | `/checkout` | ⬜ Not started | `features/Checkout/` | Medium |
-| **Payment** | `/checkout` + Stripe | ⬜ Not started | `features/Payment/` | Medium (needs Stripe test key) |
-| **Order Confirmation** | `/checkout/success-payment/:id` | ⬜ Not started | `features/Payment/` | Medium |
+| **Product Details** | `/products/details?q=...` | ✅ **Automated** | `features/ProductDetails/` | Done |
+| **Navigation & Category Tabs** | `/` (navbar) | ✅ **Automated** | `features/Navigation/` | Done |
+| **Product Catalog & Filters** | `/products?q=...` | ✅ **Automated** | `features/Catalog/` | Done |
+| **Shopping Bag** | `/shopping-bag` | ✅ **Automated** | `features/ShoppingBag/` | Done |
+| **Sign Up / Auth API** | `/signup`, auth APIs | ✅ **Automated** | `features/Auth/` | Done |
+| **Checkout & Shipping** | `/checkout` | ✅ **Automated** | `features/Checkout/` | Done |
+| **Payment** | `/checkout`, Stripe | ✅ **Automated** | `features/Payment/` | Done |
 
 ---
 

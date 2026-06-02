@@ -17,4 +17,12 @@ public final class ServiceClientFactory {
     public static SearchSuggestionApiClient searchSuggestionClient() {
         return new SearchSuggestionApiClient(TestConfigLoader.get("search.suggestion.service.url"));
     }
+
+    public static AuthenticationApiClient authClient() {
+        return new AuthenticationApiClient(TestConfigLoader.get("authentication.service.url"));
+    }
+
+    public static PaymentApiClient paymentClient() {
+        return new PaymentApiClient(TestConfigLoader.get("payment.service.url"));
+    }
 }

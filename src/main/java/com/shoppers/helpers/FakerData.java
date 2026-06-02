@@ -31,4 +31,19 @@ public final class FakerData {
     public static String streetAddress() {
         return FAKER.address().streetAddress();
     }
+
+    public static String password() {
+        return "TestPass1!";
+    }
+
+    private static String lastGeneratedPassword = password();
+
+    public static String lastPassword() {
+        return lastGeneratedPassword;
+    }
+
+    public static String uniqueUsername() {
+        lastGeneratedPassword = password();
+        return "auto" + System.currentTimeMillis() % 1_000_000_000L;
+    }
 }

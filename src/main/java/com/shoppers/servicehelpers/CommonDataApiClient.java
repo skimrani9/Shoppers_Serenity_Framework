@@ -29,6 +29,18 @@ public class CommonDataApiClient {
         return apiClient.get(baseUrl + Constants.SEARCH_SUGGESTION_LIST_PATH);
     }
 
+    public ServiceResponse getProductsByQuery(String queryParams) throws IOException, InterruptedException {
+        return apiClient.get(baseUrl + Constants.PRODUCTS_API_PATH + "?q=" + queryParams);
+    }
+
+    public ServiceResponse getProductsById(String productIds) throws IOException, InterruptedException {
+        return apiClient.get(baseUrl + Constants.PRODUCTS_API_PATH + "?product_id=" + productIds);
+    }
+
+    public ServiceResponse getFilterByQuery(String queryParams) throws IOException, InterruptedException {
+        return apiClient.get(baseUrl + Constants.FILTER_API_PATH + "?q=" + queryParams);
+    }
+
     private static String normalize(String url) {
         if (url == null || url.isBlank()) {
             throw new IllegalStateException("common.data.service.url is not configured");
