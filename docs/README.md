@@ -2,6 +2,8 @@
 
 Maven-based UI automation using **Serenity BDD**, **Cucumber**, and **TestNG** — currently scoped to **login** only.
 
+**Full guide:** [FRAMEWORK_GUIDE.md](./FRAMEWORK_GUIDE.md) — standards, module coverage, and how to add new test cases.
+
 ## Prerequisites
 
 - JDK 21+

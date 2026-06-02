@@ -2,7 +2,7 @@
 
 Serenity Cucumber BDD test automation for **login** on the Shoppers ecommerce application.
 
-**Documentation:** [docs/README.md](docs/README.md) · [docs/PROJECT_STRUCTURE.md](docs/PROJECT_STRUCTURE.md)
+**Documentation:** [docs/README.md](docs/README.md) · [docs/PROJECT_STRUCTURE.md](docs/PROJECT_STRUCTURE.md) · [docs/FRAMEWORK_GUIDE.md](docs/FRAMEWORK_GUIDE.md)
 
 ## Run locally
 

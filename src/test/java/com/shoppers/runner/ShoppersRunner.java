@@ -9,13 +9,17 @@ import org.testng.annotations.DataProvider;
  * Referenced by testng.xml for parallel test runs.
  */
 @CucumberOptions(
-        features = "classpath:features/Login",
+        features = {
+                "classpath:features/Login",
+                "classpath:features/Home",
+                "classpath:features/Search"
+        },
         glue = {"com.shoppers.stepdefinitions", "com.shoppers.hooks"},
         plugin = {
                 "pretty",
                 "net.serenitybdd.cucumber.core.plugin.SerenityReporterParallel"
         },
-        tags = "@login"
+        tags = "@login or @home or @search"
 )
 public class ShoppersRunner extends AbstractTestNGCucumberTests {
 

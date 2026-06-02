@@ -1,0 +1,5 @@
+testId,brand,category,expectedUrlFragment
+TC-HM-001,Nike,,brands=
+TC-HM-002,,Dresses,apparels=
+TC-HM-003,Anouk,,brands=
+TC-HM-004,,Tshirts,apparels=

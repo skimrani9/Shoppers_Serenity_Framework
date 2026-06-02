@@ -1,0 +1,5 @@
+testId,prefix,keyword,expectedUrlContains
+TC-SR-001,nik,Nike,brands=
+TC-SR-002,dre,Dresses,apparels=
+TC-SR-003,tsh,Tshirts,apparels=
+TC-SR-004,men,Men,genders=
