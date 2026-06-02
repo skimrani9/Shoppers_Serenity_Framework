@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Shoppers Serenity Suite" parallel="false" thread-count="1" verbose="1">
+    <listeners>
+        <listener class-name="com.shoppers.hooks.TestNGDriverListener"/>
+    </listeners>
+    <test name="Shoppers BDD Tests">
+        <classes>
+            <class name="com.shoppers.runner.ShoppersRunner"/>
+        </classes>
+    </test>
+</suite>

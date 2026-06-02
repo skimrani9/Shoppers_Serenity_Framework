@@ -1,0 +1,17 @@
+target/
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Serenity reports
+target/site/serenity/
+build/
+
+# Local overrides
+*.local.properties

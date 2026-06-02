@@ -1,0 +1,3 @@
+testId,username,password,expectedElement
+TC001,imran,1234567890,dashboard
+TC002,invalid_user,wrong_pass,Error: Username does not exist.
