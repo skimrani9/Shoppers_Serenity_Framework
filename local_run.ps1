@@ -14,5 +14,4 @@ Write-Host "Browser: $Browser"
 mvn clean verify `
     "-Denvironment=$Environment" `
     "-Dtags=$Tags" `
-    "-Dwebdriver.driver=$Browser" `
-    "-Dheadless.mode=false"
+    "-Dwebdriver.driver=$Browser"

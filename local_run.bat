@@ -10,6 +10,6 @@ echo Environment: %ENV%
 echo Tags: %TAGS%
 echo Browser: %BROWSER%
 
-mvn clean verify -Denvironment=%ENV% -Dtags=%TAGS% -Dwebdriver.driver=%BROWSER% -Dheadless.mode=false
+mvn clean verify -Denvironment=%ENV% -Dtags=%TAGS% -Dwebdriver.driver=%BROWSER%
 
 endlocal
