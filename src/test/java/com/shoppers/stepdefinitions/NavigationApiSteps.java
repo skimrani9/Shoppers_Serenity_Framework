@@ -1,15 +1,12 @@
 package com.shoppers.stepdefinitions;
 
 import com.shoppers.helpers.ScenarioContext;
-import com.shoppers.pageObjects.NavigationPage;
-import com.shoppers.pageObjects.ProductCatalogPage;
 import com.shoppers.servicehelpers.HomeApiValidator;
 import com.shoppers.servicehelpers.ServiceClientFactory;
 import com.shoppers.servicehelpers.ServiceResponse;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import net.serenitybdd.annotations.Steps;
 
 /**
  * Navigation & Category Tabs — API and UI steps (Module 2).
