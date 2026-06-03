@@ -26,6 +26,7 @@
         <commons.csv.version>1.12.0</commons.csv.version>
         <javafaker.version>1.0.2</javafaker.version>
         <tags>@login</tags>
+        <tags.all>@login or @home or @navigation or @search or @catalog or @product or @bag or @auth or @signup or @checkout or @payment</tags.all>
         <headless.mode>false</headless.mode>
         <webdriver.base.url>http://localhost:8080</webdriver.base.url>
     </properties>

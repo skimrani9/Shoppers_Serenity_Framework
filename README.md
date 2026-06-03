@@ -88,13 +88,19 @@ Run all login tests (default tag `@login`) with parameters:
 
 ### Recommended (CMD / batch)
 
-Run the whole login feature:
+Run **all test cases** (every feature module):
 
 ```bat
-run_login_feature.bat
+run_all_tests.bat
 ```
 
-Run only the positive scenario:
+Run login only (default `local_run.bat`):
+
+```bat
+local_run.bat
+```
+
+Run only the positive login scenario:
 
 ```bat
 run_login_positive.bat
